@@ -115,6 +115,7 @@ def train_model(data_dir, epochs=20, batch_size=32, lr=0.0005):
     patience = 5
     patience_counter = 0
 
+    # Training loop
     for epoch in range(epochs):
         model.train()
         train_loss = 0
@@ -180,7 +181,7 @@ def train_model(data_dir, epochs=20, batch_size=32, lr=0.0005):
     xvals = np.arange(1, 51)
     plt.plot(xvals, train_accs, color = "blue")
     plt.plot(xvals, val_accs, color = "yellow")
-    plt.savefig("../visualize/Train_vs_Val_accs.png")
+    plt.savefig("../plots/Train_vs_Val_accs.png")
     plt.show()
 
 if __name__ == "__main__":
