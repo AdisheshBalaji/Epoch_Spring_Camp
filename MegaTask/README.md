@@ -1,7 +1,3 @@
-Here's a cleaned-up and corrected version of your `README.md`:
-
----
-
 # Epoch IITH – Community Task
 
 This repository contains code for the community task by **Epoch IITH**.
