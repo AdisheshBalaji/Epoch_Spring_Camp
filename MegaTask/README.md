@@ -16,42 +16,6 @@ The primary objective is to classify emotional speech into 8 emotions:
 
 We use the RAVDESS Emotional Speech Audio dataset, which contains 1440 speech clips from male and female actors expressing different emotions.
 
-## Directory Structure
-
-```
-.
-├── data                        # Raw and processed data storage
-├── src                         # Source code
-│   ├── data                    # Data processing scripts
-│   │   ├── dataset.py          # Dataset handling and loading
-│   │   ├── preprocess.py       # Audio and text preprocessing
-│   │   └── split_dataset.py    # Train/validation/test splitting
-│   ├── models                  # Model definitions and training
-│   │   ├── accuracy_logs       # Training metrics and logs
-│   │   ├── models              # Saved model architectures
-│   │   │   ├── best_cnn_model.pth      # Best CNN model
-│   │   │   ├── best_multimodal_model.pth  # Best fusion model
-│   │   │   └── best_text_model.pth     # Best text model
-│   │   └── state_dicts         # Saved model weights
-│   │       ├── best_cnn_model.pth      # CNN weights
-│   │       ├── best_text_model.pth     # Text model weights
-│   │       └── final_multimodal_model.pth  # Fusion model weights
-│   ├── train_test              # Training and evaluation scripts
-│   │   ├── __pycache__         # Python cache files
-│   │   ├── train_cnn.py        # CNN training script
-│   │   ├── train_fusion.py     # Multimodal fusion training
-│   │   └── train_rnn.py        # RNN training script
-│   └── plots                   # Visualization outputs
-│       ├── accuracy_plots      # Model accuracy visualizations
-│       │   ├── cnn_accuracy_plot.png          # CNN accuracy
-│       │   ├── multimodal_training_history.png # Fusion model performance
-│       │   └── text_accuracy_plot.png         # Text model accuracy
-│       ├── confusion_matrices  # Model evaluation matrices
-│       └── sample_spectrograms # Example spectrogram visualizations
-├── .gitignore                  # Git ignore file
-├── README.md                   # Project documentation
-└── requirements.txt            # Dependencies
-```
 
 ## Implementation Details
 
@@ -110,9 +74,4 @@ python src/train_test/train_fusion.py
 ### Evaluation
 Results are saved in the `src/plots` directory.
 
-## License
-[Insert license information here]
 
-## Acknowledgements
-- RAVDESS Emotional Speech Audio dataset
-- [Add any other acknowledgements]
