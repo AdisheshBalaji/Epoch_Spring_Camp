@@ -1,6 +1,6 @@
 # Multimodal Emotion Classification
 
-This project implements a deep learning system for classifying human emotions using both audio data (processed as spectrograms) and text transcripts generated from speech. The system leverages Convolutional Neural Networks (CNNs) for audio processing and Recurrent Neural Networks (RNNs) for text analysis, with a multimodal fusion approach to combine both modalities.
+This project implements a deep learning system for classifying human emotions using both audio data (processed as spectrograms) and text transcripts generated from speech. The system leverages Convolutional Neural Networks (CNNs) for audio processing and Recurrent Neural Networks (RNNs) for text analysis, with a multimodal fusion approach to combine both.
 
 ## Project Overview
 
@@ -14,7 +14,9 @@ The primary objective is to classify emotional speech into 8 emotions:
 - Disgust
 - Surprised
 
-We use the RAVDESS Emotional Speech Audio dataset, which contains 1440 speech clips from male and female actors expressing different emotions.
+We use the RAVDESS Emotional Speech Audio dataset, which contains 1440 speech clips from male and female actors vocalizing different emotions using only two sentences
+"Kids are talking by the door"
+"Dogs are sitting by the door"
 
 
 ## Implementation Details
@@ -22,13 +24,15 @@ We use the RAVDESS Emotional Speech Audio dataset, which contains 1440 speech cl
 ### Phase 1: Unimodal Pipelines
 
 #### Audio CNN
-- Converts audio files to spectrograms or MFCCs
-- Trains a CNN model to classify emotions from these 2D visual representations
+- Converts audio files to Mel Spectrograms
+- Trains a CNN model to classify emotions on these Mel Spectrograms
 - Implementation in `train_cnn.py`
 
 #### Text RNN
-- Generates transcripts from audio using speech-to-text technology
-- Trains an RNN (LSTM or GRU) on these transcripts for emotion classification
+- Since there are only two sentences in the training data, for meaningful rnn training
+- I tried to train it on the original dataset without templates, this gave an accuracy of `14.95%`, which is no better than random guessing 
+- Simulates text data for 8 emotions using predefined template sentences.
+- Trains an RNN (GRU) on these transcripts for emotion classification
 - Implementation in `train_rnn.py`
 
 ### Phase 2: Multimodal Fusion
