@@ -6,3 +6,5 @@
 /src/best_model_metrics.txt
 /src/best_multimodal_model.pth
 archive.zip
+rnn.py
+train_cnn.py
