@@ -6,7 +6,7 @@ import os
 # "E:\Epoch_Spring_Camp\MegaTask\data\ravdess"
 
 
-def preprocess_audio(input_dir="/mnt/e/Epoch_Spring_Camp/MegaTask/data/ravdess", output_dir="/mnt/e/Epoch_Spring_Camp/MegaTask/data/processed", sr=16000, n_mels=128):
+def preprocess_audio(input_dir="../../data/ravdess", output_dir="../../data/processed", sr=16000, n_mels=128):
     os.makedirs(output_dir, exist_ok=True)
 
     # Recursively collect all .wav files

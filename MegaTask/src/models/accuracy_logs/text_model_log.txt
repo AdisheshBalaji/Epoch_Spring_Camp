@@ -1,0 +1,12 @@
+Text-RNN Training started
+Epoch 1/15: Train Loss: 2.0770, Train Acc: 12.12% | Val Loss: 2.0641, Val Acc: 12.96%
+Epoch 2/15: Train Loss: 2.0600, Train Acc: 15.19% | Val Loss: 2.0484, Val Acc: 15.74%
+Epoch 3/15: Train Loss: 1.7348, Train Acc: 30.49% | Val Loss: 1.3130, Val Acc: 40.28%
+Epoch 4/15: Train Loss: 1.0757, Train Acc: 56.11% | Val Loss: 0.5662, Val Acc: 83.80%
+Epoch 5/15: Train Loss: 0.5607, Train Acc: 77.26% | Val Loss: 0.2570, Val Acc: 87.96%
+Epoch 6/15: Train Loss: 0.2859, Train Acc: 91.56% | Val Loss: 0.0565, Val Acc: 100.00%
+Epoch 7/15: Train Loss: 0.1580, Train Acc: 95.73% | Val Loss: 0.0279, Val Acc: 100.00%
+Epoch 8/15: Train Loss: 0.1140, Train Acc: 97.32% | Val Loss: 0.0185, Val Acc: 100.00%
+Epoch 9/15: Train Loss: 0.0883, Train Acc: 98.21% | Val Loss: 0.0125, Val Acc: 100.00%
+Epoch 10/15: Train Loss: 0.0555, Train Acc: 98.91% | Val Loss: 0.0089, Val Acc: 100.00%
+Epoch 11/15: Train Loss: 0.0439, Train Acc: 98.81% | Val Loss: 0.0068, Val Acc: 100.00%

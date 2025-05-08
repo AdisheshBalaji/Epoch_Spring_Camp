@@ -33,6 +33,6 @@ def split_dataset(data_dir, output_dir, train_ratio=0.7, val_ratio=0.15):
     print(f"Test files: {len(test_files)}")
 
 if __name__ == "__main__":
-    data_dir = "/mnt/e/Epoch_Spring_Camp/MegaTask/data/processed"
-    output_dir = "/mnt/e/Epoch_Spring_Camp/MegaTask/data/split"
+    data_dir = "../../data/processed"
+    output_dir = "data/split"
     split_dataset(data_dir, output_dir)
