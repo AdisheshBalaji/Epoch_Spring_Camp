@@ -8,3 +8,7 @@
 archive.zip
 rnn.py
 train_cnn.py
+/best_cnn_model/
+best_cnn_model.pth
+*.zip
+logs/
