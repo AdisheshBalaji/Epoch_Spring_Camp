@@ -42,7 +42,7 @@ We use the RAVDESS Emotional Speech Audio dataset, which contains 1440 speech cl
 
 The project includes various visualizations to evaluate model performance:
 - Accuracy plots for individual modalities and the multimodal approach
-- Confusion matrices for error analysis
+- Confusion matrices after intervals of epochs to get a better understanding of the working of the models
 - Training history plots
 
 ## Getting Started
